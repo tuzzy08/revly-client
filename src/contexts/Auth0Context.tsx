@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { createContext, useEffect, useReducer } from 'react';
 import { useUser, UserProfile } from '@auth0/nextjs-auth0/client';
+import useAuth from '../hooks/useAuth';
 
 interface AuthState {
   isAuthenticated: Boolean,
